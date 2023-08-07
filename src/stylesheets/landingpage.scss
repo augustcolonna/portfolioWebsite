@@ -4,62 +4,135 @@ $main-font: "Playfair Display", serif;
 
 body,
 html {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	width: 100vw;
-	background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
 }
 
 .nav {
-	font-family: $main-font;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100vw;
+  font-family: $main-font;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 ul {
-	display: grid;
-	grid-template-columns: 1fr repeat(5);
-	grid-template-rows: auto;
-	grid-template-areas:
-		"vorname . . . ."
-		". projects . . ."
-		". . about-me . ."
-		". . . contact ."
-		". . . . surname";
-	list-style: none;
-	width: 70%;
+  display: grid;
+  grid-template-columns: 1fr repeat(5);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "vorname . . . ."
+    ". projects . . ."
+    ". . about-me . ."
+    ". . . contact ."
+    ". . . . surname";
+  list-style: none;
+  width: 70%;
+  padding: 0;
 }
 
 .vorname {
-	grid-area: vorname;
-	font-size: 5rem;
-	justify-self: start;
+  grid-area: vorname;
+  font-size: 5rem;
+  justify-self: start;
+  animation: slideInLeft;
+  animation-duration: 2s;
+
+  &:hover {
+    text-decoration: line-through;
+  }
 }
 
 .projects {
-	grid-area: projects;
-	font-size: 2rem;
-	justify-self: center;
+  grid-area: projects;
+  font-size: 2rem;
+  justify-self: center;
+  animation: flipInX;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  opacity: 1;
+
+  &:hover {
+    text-decoration: line-through;
+  }
 }
 
 .about-me {
-	grid-area: about-me;
-	font-size: 2rem;
+  grid-area: about-me;
+  font-size: 2rem;
+  text-align: center;
+  animation: flipInX;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  opacity: 1;
+
+  &:hover {
+    text-decoration: line-through;
+  }
 }
 
 .contact {
-	grid-area: contact;
-	font-size: 2rem;
+  grid-area: contact;
+  font-size: 2rem;
+  animation: flipInX;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  opacity: 1;
+
+  &:hover {
+    text-decoration: line-through;
+  }
 }
 
 .surname {
-	grid-area: surname;
-	font-size: 5rem;
-	justify-self: end;
+  grid-area: surname;
+  font-size: 5rem;
+  justify-self: end;
+  animation: slideInRight;
+  animation-duration: 2s;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    margin-left: -200%;
+    width: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    margin-right: -100%;
+    width: 0%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes flipInX {
+  from {
+    transform: rotateX(-90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
 }
