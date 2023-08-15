@@ -1,0 +1,98 @@
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #eeeded;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.my-links {
+	display: flex;
+	justify-content: flex-end;
+	width: 95vw;
+	margin: 0;
+	padding: 0;
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		gap: 25px;
+	}
+}
+
+img {
+	width: 300px;
+	border-radius: 50%;
+}
+
+.my-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hello-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+
+.main-container {
+	-webkit-animation: fadeIn 2s ease-in;
+	-moz-animation: fadeIn 2s ease-in;
+	animation: fadeIn 2s ease-in;
+}
+
+.rotating-curved-text {
+	-webkit-animation: spin 13s linear infinite;
+	-moz-animation: spin 13s linear infinite;
+	animation: spin 13s linear infinite;
+}
+
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
