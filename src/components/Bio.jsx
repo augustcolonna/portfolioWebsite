@@ -1,24 +1,11 @@
-import ReactCurvedText from "react-curved-text";
+import experienceData from "../utilities/work-experience.json";
 
 function Bio() {
 	return (
-		<div className="my-name">
-			<ReactCurvedText
-				width="900"
-				height="900"
-				cx={450}
-				cy={450}
-				rx={300}
-				ry={300}
-				startOffset="0"
-				reversed={true}
-				text="August Colonna, Software Developer"
-				textProps={{ style: { fontSize: 40 } }}
-				textPathProps={null}
-				tspanProps={null}
-				ellipseProps={null}
-				svgProps={{ className: "rotating-curved-text" }}
-			/>
+		<div className="expereience-container">
+			{experienceData.map((experience) => {
+				return <button>{experience.jobName}</button>;
+			})}
 		</div>
 	);
 }

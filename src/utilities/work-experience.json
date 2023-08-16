@@ -1,0 +1,42 @@
+[
+	{
+		"_id": "000",
+		"jobName": "Web and App Development",
+		"company": "Freelance",
+		"location": "Germany",
+		"time": "June 2023  - Present",
+		"moreInfo": "Designing, building and deploying websites, web apps and progressive web apps Ability to continue improving programming skills"
+	},
+	{
+		"_id": "001",
+		"jobName": "Account Executive",
+		"company": "Shopmonkey",
+		"location": "United States",
+		"time": "March 2021 - Nov 2022",
+		"skillsGained": "Attained 105%+ of monthly quota on average, Represented the sales team on the enablement cohort, Worked closely with the product team, Led sales training for the sales team, Prepared and delivered on-site presentations"
+	},
+	{
+		"_id": "002",
+		"jobName": "Account Executive",
+		"company": "Podium",
+		"location": "United States",
+		"time": "May 2019 - March 2021",
+		"skillsGained": "Top Performer of 2019, Promoted 3 times within 2 years, Met and Surpassed monthly quota regularly, Rigid schedule of arriving at the office before 6 AM"
+	},
+	{
+		"_id": "003",
+		"jobName": "Assistant Coach",
+		"company": "University of Utah Lacrosse Team",
+		"location": "United States",
+		"time": "August 2018 - May 2019",
+		"skillsGained": "Served as captain for two consecutive seasons, Instrumental in building the culture"
+	},
+	{
+		"_id": "004",
+		"jobName": "Research Assistant",
+		"company": "Williams College",
+		"location": "United States",
+		"time": "June 2017 - Aug 2017",
+		"skillsGained": "Aggregated data for predictive models, Provided weekly memos containing research, Reviewed sports analytics research journals"
+	}
+]
