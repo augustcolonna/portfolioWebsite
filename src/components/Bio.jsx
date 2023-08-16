@@ -2,11 +2,14 @@ import experienceData from "../utilities/work-experience.json";
 import { useState } from "react";
 
 function Bio() {
-	const [showJobDetails, setShowJobDetails] = useState(true);
+	const [showJobDetails, setShowJobDetails] = useState(false);
+	const [job, setJob] = useState(experienceData);
 
 	function toggleShowJobDetails() {
 		setShowJobDetails(!showJobDetails);
 	}
+
+	function selectSpecificJob(jobId) {}
 
 	return (
 		<div className="expereience-container">
@@ -17,13 +20,7 @@ function Bio() {
 					</button>
 				);
 			})}
-			<div>
-				{showJobDetails
-					? experienceData.map((experience) => {
-							return <p key={"_id"}>{experience.company}</p>;
-					  })
-					: ""}
-			</div>
+			<div>{showJobDetails ? "Hide" : ""}</div>
 		</div>
 	);
 }
