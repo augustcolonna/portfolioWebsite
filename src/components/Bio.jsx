@@ -15,12 +15,12 @@ function Bio() {
 		<div className="expereience-container">
 			{experienceData.map((experience) => {
 				return (
-					<button onClick={toggleShowJobDetails} key={"_id"}>
-						{experience.jobName}
-					</button>
+					<div key={"_id"}>
+						<button onClick={toggleShowJobDetails}>{experience.jobName}</button>
+						<div>{showJobDetails ? "Hide" : ""}</div>
+					</div>
 				);
 			})}
-			<div>{showJobDetails ? "Hide" : ""}</div>
 		</div>
 	);
 }
