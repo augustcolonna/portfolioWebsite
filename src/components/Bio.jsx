@@ -13,14 +13,23 @@ function Bio() {
 
 	return (
 		<div className="expereience-container">
-			{experienceData.map((experience) => {
+			<button onClick={toggleShowJobDetails} id={'000'}>Web and App Development</button>
+			<div><h2></h2></div>
+			<button>Account Executive</button>
+			<button>Account Executive</button>
+			<button>Assistant Coach</button>
+			<button>Research Assistant</button>
+			
+			
+			
+			{/* {experienceData.map((experience) => {
 				return (
 					<div key={"_id"}>
 						<button onClick={toggleShowJobDetails}>{experience.jobName}</button>
 						<div>{showJobDetails ? "Hide" : ""}</div>
 					</div>
 				);
-			})}
+			})} */}
 		</div>
 	);
 }
