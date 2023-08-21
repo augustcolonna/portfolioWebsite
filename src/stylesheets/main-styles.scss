@@ -17,6 +17,12 @@ body {
 	-moz-animation: fadeIn 2s ease-in;
 	animation: fadeIn 2s ease-in;
 	margin: 0 auto;
+	width: 100vw;
+}
+
+.dark {
+	background-color: #000;
+	color: #eeeded;
 }
 
 .top-banner {
@@ -41,12 +47,28 @@ body {
 	border-radius: 50%;
 	margin-left: 50px;
 	margin-top: 50px;
+	
 }
 
-.hello-container {
+.profile-container{
 	display: flex;
+	flex-direction: row;
 	align-items: center;
+	justify-content: space-evenly;
+	width: 100vw;
 }
+
+.bio {
+	width: 50%;
+
+	p {
+		line-height: 1.5rem;
+	}
+}
+
+
+
+
 
 @-moz-keyframes fadeIn {
 	from {
