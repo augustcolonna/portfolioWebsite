@@ -1,6 +1,7 @@
 
-
 function TopBanner(props) {
+
+  // eslint-disable-next-line react/prop-types
   const { toggleTheme } = props;
 
   return (

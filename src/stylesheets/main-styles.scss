@@ -4,94 +4,158 @@ $main-font: "Josefin Sans", sans-serif;
 
 html,
 body {
-	height: 100vh;
-	width: 100vw;
-	background-color: #eeeded;
-	margin: 0;
-	padding: 0;
-	font-family: $main-font;
+  height: 100vh;
+  width: 100vw;
+  background-color: #eeeded;
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
 }
 
 .main-container {
-	-webkit-animation: fadeIn 2s ease-in;
-	-moz-animation: fadeIn 2s ease-in;
-	animation: fadeIn 2s ease-in;
-	margin: 0 auto;
-	width: 100vw;
+  -webkit-animation: fadeIn 2s ease-in;
+  -moz-animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-in;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 .dark {
-	background-color: #000;
-	color: #eeeded;
+  background-color: #000;
+  color: #eeeded;
 }
 
 .top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97vw;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 0;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+
+.head-shot img {
+  width: 300px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.bio {
+  width: 50%;
+
+  p {
+    line-height: 1.5rem;
+  }
+}
+
+.header {
+  font-weight: 700;
+  font-size: 3.5rem;
+
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.expereience-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+  width: 70%;
+}
+
+.job-name {
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
+	margin: 5px;
+}
+.job-button {
+	width: 40%;
+  margin: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-family: $main-font;
+  color: #eeeded;
+}
+
+.job-details{
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
 	align-items: center;
-	width: 97vw;
-	margin-left: 15px;
-	margin-right: 15px;
+	justify-content:space-between;
+	width: 90%;
+	height: 100%;
+	margin: 0;
 	padding: 0;
 
 	ul {
 		list-style: none;
-		display: flex;
-		flex-direction: row;
-		gap: 25px;
+    padding: 0;
+    margin: 0;
+
+		li {
+			font-weight: 700;
+			font-size: 1.1rem;
+      line-height: 2rem;
+		}
+	}
+
+	p{
+		width: 60%;
+    line-height: 1.5rem;
 	}
 }
-
-.head-shot img {
-	width: 300px;
-	border-radius: 50%;
-	margin-left: 50px;
-	margin-top: 50px;
-	
-}
-
-.profile-container{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
-	width: 100vw;
-}
-
-.bio {
-	width: 50%;
-
-	p {
-		line-height: 1.5rem;
-	}
-}
-
-
-
-
 
 @-moz-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

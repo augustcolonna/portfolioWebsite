@@ -24,7 +24,7 @@ function MainPage() {
     <div className={"main-container " + {theme}}>
       <TopBanner toggleTheme={toggleTheme}/>
       <ProfilePicture />
-      <Bio />
+      <Bio  toggleTheme={toggleTheme}/>
     </div>
   );
 }
