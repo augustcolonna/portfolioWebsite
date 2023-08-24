@@ -5,13 +5,13 @@ import NavBar from "./NavBar";
 import ProfilePicture from "./ProfilePicture";
 
 function LandingPage() {
-	return (
-		<div className="main-container">
-			<NavBar />
-			<ProfilePicture />
-			<Experience />
-		</div>
-	);
+  return (
+    <div className="main-container">
+      <NavBar />
+      <ProfilePicture />
+      <Experience />
+    </div>
+  );
 }
 
 export default LandingPage;
